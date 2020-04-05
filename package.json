@@ -1,0 +1,27 @@
+{
+  "name": "exdeus-server",
+  "version": "0.0.1",
+  "description": "A server to run the ex deus game room. Intended to be used in conjunction with the exdeus front react app",
+  "main": "server.js",
+  "scripts": {
+    "test": "server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagnusMagnusson/exdeus_gameroom.git"
+  },
+  "keywords": [
+    "exdeus",
+    "board-games",
+    "fun",
+    "games",
+    "party",
+    "remote"
+  ],
+  "author": "Magnús Á. Magnússon",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/MagnusMagnusson/exdeus_gameroom/issues"
+  },
+  "homepage": "https://github.com/MagnusMagnusson/exdeus_gameroom#readme"
+}
