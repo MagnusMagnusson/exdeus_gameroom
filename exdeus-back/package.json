@@ -23,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/MagnusMagnusson/exdeus_gameroom/issues"
   },
-  "homepage": "https://github.com/MagnusMagnusson/exdeus_gameroom#readme"
+  "homepage": "https://github.com/MagnusMagnusson/exdeus_gameroom#readme",
+  "devDependencies": {
+    "node-hot-loader": "^1.17.9",
+    "nodemon": "^2.0.2",
+    "webpack": "^4.42.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
 }
