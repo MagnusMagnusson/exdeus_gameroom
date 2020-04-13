@@ -1,0 +1,8 @@
+﻿{
+  "network": {
+    "events": {
+      "DISCONNECT": 0,
+      "RENAME": 1
+    }
+  }
+}

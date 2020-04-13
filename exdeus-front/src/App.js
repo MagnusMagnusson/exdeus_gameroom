@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NameEntryField } from './js/components';
+import { GameRoom } from './js/components';
 import logo from './logo.svg';
 import './App.css';
 import socketIOClient from "socket.io-client";
@@ -12,6 +12,8 @@ class App extends Component {
             endpoint: "http://127.0.0.1:2020"
         };
         this.nameChange = this.nameChange.bind(this);
+        this.emit = this.emit.bind(this);
+        
     }
 
     componentDidMount() {
@@ -23,10 +25,14 @@ class App extends Component {
         this.socket.emit("rename", newName);
     }
 
+    emit(event, data) {
+        this.socket.emit(event, data);
+    }
+
     render() {
         const { response } = this.state;
         return (
-            <NameEntryField changeName={this.nameChange} />
+            <GameRoom emit={this.emit} />
         );
     }
 }
